@@ -1,0 +1,62 @@
+
+<!--
+  This template loads for the 'user' state (app.js)
+  'user' is a $scope variable created in UserCtrl controller (controllers.js)
+  The UserCtrl pull data from Contacts service (service.js)
+  The Contacts service returns contact by id
+-->
+<ion-view view-title="Perfil">
+
+  <ion-content>
+    <div class="text-center user-profile positive-bg">
+
+     <img class="profile-picture" menu-close="" src="{{ user.face}}">
+      <h4>  Ver Foto </h4>
+
+      <div class="row positive-bg light">
+        <a class="col text-center">
+          <span class="number">{{ user.followers }}</span>
+          <span class="desc">Contactos</span>
+        </a>
+        <a class="col text-center">
+          <span class="number">{{ user.following }}</span>
+          <span class="desc">Amigos</span>
+        </a>
+        <a class="col text-center">
+          <span class="number">{{ user.favorites }}</span>
+          <span class="desc">Familia</span>
+        </a>
+      </div>
+    </div>
+
+            
+<div class="list">
+  <label class="item item-input item-floating-label">
+    <span class="input-label">Nombre</span>
+    <input type="text" placeholder="Nombre" value="{{ user.name }}">
+  </label>
+  <label class="item item-input item-floating-label">
+    <span class="input-label">Estado</span>
+    <input type="text" placeholder="Estado" value="SIGTICS">
+  </label>
+  <label class="item item-input item-floating-label">
+    <span class="input-label">Correo</span>
+    <input type="text" placeholder="Correo" value="sigtics@gmail.com">
+  </label>
+  <div class="padding">
+      <button class="button button-block button-positive"  ng-click="login()">
+        Actualizar
+      </button>
+    </div>
+</div>
+
+</ion-content>
+
+
+<div class="contenedor" ui-sref="agregar" style="top:500px">
+<button class="botonF1">
+<span><i class="icon ion-ios-reload"></i></span>
+</button>
+</div>
+
+</ion-view>

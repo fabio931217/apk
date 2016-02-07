@@ -1,0 +1,63 @@
+<ion-view view-title="Login" hide-nav-bar="true" class="login-bg">
+  <ion-content style="border:solid;background-color:rgba(0, 0, 0, 0.73);">
+    <!-- Logo -->
+      
+  
+    <div class="padding text-center">
+      <h1>
+        <i class="light ion-social-angular"></i>
+      </h1>
+      <h2 class="light">Enri</h2>
+      <p class="light">Mario en tu radio</p>
+    </div>
+
+    <!-- Login form -->
+    <div class="list list-inset transparent-form" >
+      <label class="item item-input">
+        <i class="ion-ios-email-outline light icon-label"></i>
+        <input type="text" placeholder="Email o Nombre de usuario" ng-model="data.identificacion"  style="color:#fff">
+      </label>
+      <label class="item item-input">
+        <i class="ion-ios-locked-outline light icon-label"></i>
+        <input type="password" placeholder="Contraseña" ng-model="data.clave" style="color:#fff">
+      </label>
+    </div>
+    <div class="padding">
+      <button class="button button-block button-positive"  ng-click="login()">
+        Iniciar Sesion
+      </button>
+    </div>
+
+   
+     <div class="padding text-center">
+      <span class="light"></span>
+     
+    </div>
+
+    <!-- Other links -->
+    <div class="padding row" style="">
+
+      <div class="row" style="border:none" >
+
+     
+      <div class="col col-50" style="border-radius:8px;height:auto;margin-right:5px;margin-bottom:5px;">
+        <center> <a href="#/restaurar" class="light" ><i class="light ion-ios-locked"></i>¿Olvido su contraseña?</a> </center>
+      </div>
+      
+    
+     
+      <div class="col col-50" style="border-radius:8px;height:auto;margin-right:5px;margin-bottom:5px;">
+       <center> <a href="#/register" class="light" style=""><i class="light ion-person-stalker"></i> ¿Eres nuevo? Registrate  </center>
+    
+       </div>
+     
+  
+      
+
+      </div>
+    </div>
+
+
+      </div>
+  </ion-content>
+</ion-view>
