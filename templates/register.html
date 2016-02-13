@@ -1,0 +1,63 @@
+<ion-view view-title="Login" hide-nav-bar="true" class="login-bg">
+
+  <ion-content>
+    <!-- Logo -->
+
+<div class="bar bar-header" style="border:none;background-color:transparent;">
+ <a href="#/login" class="light"><button class="button button-icon icon ion-ios-arrow-back">
+   Iniciar sesion
+ </button>
+ </a>
+  <div class="h1 title"></div>
+</div>
+<br/>
+<br/>
+
+   <div class="padding text-center" style="padding-top:40px">
+      <img src="img/bg/logo.jpg" style="width:50%">
+    </div>
+
+    <!-- Signup form -->
+    <div id="register" ng-app='angular_post' ng-controller='registrar'>
+    <div class="list list-inset transparent-form">
+        <label class="item item-input item-select">
+    <div class="input-label" style="color:#bbb;">
+      <i class="ion-ios-person-outline light icon-label"></i> Sexo
+    </div>
+   <select name="sexo_r" id="sexo_r" ng-model="sexo_r">
+          <option selected value="1" style="color:#000;border:0;width:100%">Hombre</option>
+          <option value="2" style="color:#000;border:0;width:100%">Mujer</option>
+          <option value="3"  style="color:#000;border:0;width:100%">Otro</option>
+  </select>
+  </label>
+     <label class="item item-input">
+        <i class="ion-ios-person-outline light icon-label"></i>
+        <input type="text" placeholder="Nombre Completo"name="nombre_r" id="nombre_r" ng-model="nombre_r">
+      </label>
+      <label class="item item-input">
+        <i class="ion-ios-email-outline light icon-label"></i>
+        <input type="email" placeholder="Correo Electronico" name="email_r" id="email_r" ng-model="email_r">
+      </label>
+      <label class="item item-input">
+        <i class="ion-ios-person-outline light icon-label"></i>
+        <input type="text" placeholder="Nombre de usuario" name="user_r" id="user_r" ng-model="user_r">
+      </label>
+      <label class="item item-input">
+        <i class="ion-ios-locked-outline light icon-label"></i>
+        <input type="password" placeholder="Contraseña" name="password_r" id="password_r" ng-model="password_r">
+      </label>
+    </div>
+    <div class="padding">
+      <button class="button button-block button-positive" ng-click="registrar()">
+        Registrarse
+      </button>
+       <span id="message">{{message}}</span>
+    </div>
+    </div>
+
+    
+
+    <!-- Other links -->
+
+  </ion-content>
+</ion-view>

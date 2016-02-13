@@ -1,0 +1,36 @@
+<ion-view view-title="Restaurar Contraseña" hide-nav-bar="true" class="login-bg">
+
+  <ion-content>
+    <!-- Logo -->
+
+<div class="bar bar-header" style="border:none;background-color:transparent;">
+ <a href="#/login" class="light" style="text-color:#fff"><button class="button button-icon icon ion-ios-arrow-back" >
+   Iniciar sesion
+ </button>
+ </a>
+  <div class="h1 title"></div>
+</div>
+<br/>
+<br/>
+
+
+ <div class="padding text-center" style="padding-top:140px">
+      <img src="img/bg/logo.jpg" style="width:50%">
+    </div>
+
+<div id="restaurar" ng-app='angular_post' ng-controller='restaurar'>
+ <div class="list list-inset transparent-form" >
+      <label class="item item-input">
+        <input type="text" placeholder="Correo Electronico o Nombre de Usuario" id='usuario_res' name='usuario_res' ng-model="usuario_res">
+      </label>
+     
+    <div class="padding">
+      <button class="button button-block button-positive" ng-click="restaurar()">
+        Restaurar
+      </button>
+    </div>
+</div>
+  </div>
+
+</ion-content>
+</ion-view>

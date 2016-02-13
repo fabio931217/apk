@@ -1,0 +1,25 @@
+<ion-view view-title="Cambiar Contraseña" class="login-bg">
+<ion-content>
+<div id="c_clave" ng-app='angular_post' ng-controller='c_clave'>
+<div class="list list-inset transparent-form">
+      
+      <label class="item item-input">
+        <input type="password" placeholder="Contraseña Actual" id='c_actual' name='c_actual' ng-model="c_actual">
+      </label>
+      <label class="item item-input">
+        <input type="password" placeholder="Nueva Contraseña" id='c_nueva' name='c_nueva' ng-model="c_nueva">
+      </label>
+      <label class="item item-input">
+        <input type="password" placeholder="Confirmar Contraseña" id='cc_nueva' name='cc_nueva' ng-model="cc_nueva">
+      </label>
+    <div class="padding">
+      <button class="button button-block button-positive" ng-click= "cambiar()" > 
+        Guardar Cambios
+      </button>
+    </div>
+    </div>
+    </div>
+
+
+</ion-content>
+</ion-view>

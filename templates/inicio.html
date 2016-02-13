@@ -1,0 +1,33 @@
+<link rel="stylesheet" type="text/css" href="css/inicio.css">
+
+<ion-view view-title="Inicio" cache-view="false">
+
+        <link rel="stylesheet" href="css/index.css">
+
+
+     <ion-content class="padding">
+        <section id="cd-timeline" class="cd-container">
+          <div ng-repeat="activity in timeline">
+            <div class="cd-timeline-block">
+              <div class="cd-timeline-picture text-center dark">
+                <img ng-src={{activity.profilePicture}}></img>
+              </div>
+              <!-- cd-timeline-img -->
+              <div class="cd-timeline-content padding dark" style="border-radius:6px">
+                <h5 class="marginBottom0 marginTop0">{{activity.title}}</h5>
+                <p class="marginTop5 cd-author">Hora: {{activity.author}} - {{activity.date | date: "d MMM"}}</p>
+                <p class="timelineText" ng-if="(activity.type=='text')">{{activity.text}}</p>
+                 <img src={{activity.text}} ng-if="(activity.type=='picture')" style="width:50%"></img>
+              </div>
+            </div>
+          </div>
+        </section>
+      </ion-content>
+
+<div class="contenedor" ui-sref="agregar">
+<button class="botonF1">
+<span><i class="icon ion-refresh"></i></span>
+</button>
+</div>
+
+</ion-view>
