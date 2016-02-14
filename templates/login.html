@@ -2,7 +2,6 @@
   <ion-content >
     <!-- Logo -->
       
-  
     <div class="padding text-center" style="padding-top:140px">
       <img src="img/bg/logo.jpg" style="width:50%">
     </div>
@@ -12,11 +11,11 @@
     <div class="list list-inset transparent-form">
       <label class="item item-input">
         <i class="ion-ios-email-outline light icon-label"></i>
-        <input type="text" placeholder="Email o Nombre de usuario" name='usuario_l' id='usuario_l' ng-model="usuario_l"  style="color:#fff">
+        <input type="text" placeholder="Email o Nombre de usuario" name='usuario_l' id='usuario_l' ng-model="usuario_l" >
       </label>
       <label class="item item-input">
         <i class="ion-ios-locked-outline light icon-label"></i>
-        <input type="password" placeholder="Contraseña" name='clave_l' id='clave_l' ng-model="clave_l" style="color:#fff">
+        <input type="password" placeholder="Contraseña" name='clave_l' id='clave_l' ng-model="clave_l">
       </label>
     </div>
     <div class="padding">
@@ -38,17 +37,11 @@
       <div class="row" style="border:none" >
 
      
-      <div class="col col-50" style="border-radius:8px;height:auto;margin-right:5px;margin-bottom:5px;">
-        <center> <a href="#/restaurar" class="light" style="color:#000"><i class="light ion-ios-locked"></i>¿Olvido su contraseña?</a> </center>
-      </div>
+     <a href="#/restaurar" style="color:#000;border:none;width:100%;padding:0px"><i class="ion-locked"></i> ¿Olvido su contraseña?</a> 
+   
       
     
-     
-      <div class="col col-50" style="border-radius:8px;height:auto;margin-right:5px;margin-bottom:5px;">
-       <center> <a href="#/register" class="light" style="color:#000"><i class="light ion-person-stalker"></i> ¿Eres nuevo? Registrate  </center>
-    
-       </div>
-     
+      <a href="#/register" class="light" style="color:#000;border:none;width:100%;padding:0px"> <i class="ion-person-add"></i> ¿Eres nuevo? Registrate  </a>  
   
       
 
